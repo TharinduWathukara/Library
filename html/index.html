@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <title>T&K Film Library</title>
     <link rel="stylesheet" href="../css/indexstyle.css">
+    <script src="../Libraries/jquery-3.2.1.min.js"></script>
+    <script src="../script/indexscript.js"></script>
 
 </head>
 <body>
 
 <header> <span id="header_span1">T<span id="header_span3">&</span>K</span> <span id="header_span2">Film</span> Library</header>
 
-
 <nav>
     <hr>
     <ul>
         <li>Home</li>
-        <li>Category</li>
+        <li class="dropdown_category">
+            <div class="category">Category</div>
+            <div class="film_content">
+                <a>Action</a>
+                <a>Adventure</a>
+                <a>Animation</a>
+                <a>Biography</a>
+                <a>Comedy</a>
+                <a>Crime</a>
+                <a>Documentary</a>
+                <a>Drama</a>
+                <a>Family</a>
+                <a>Fantasy</a>
+                <a>History</a>
+                <a>Horror</a>
+                <a>Music</a>
+                <a>Romance</a>
+                <a>Sport</a>
+                <a>War</a>
+            </div>
+        </li>
         <li>Upcomming</li>
         <li>Browse Movies</li>
-        <li>Contact Us</li>
-        <li>
+        <li>TV Shows</li>
+        <li id="qsearch">
             <form>
                 <input type="text" placeholder="Quick Search..." id="quick_search">
                 <input type="submit" value="Search" id="quick_search_submit">
@@ -30,20 +51,59 @@
 </nav>
 <hr>
 
-<div id="middle"></div>
+<div id="middle">
+    <!---------------------------------home------------------------------->
+    <div id="home">
+        <div class="home_list">Latest</div>
+        <hr>
+        <div id="latest"></div>
 
+        <div class="home_list">3D Movies</div>
+        <hr>
+        <div id="3D_movies"></div>
+
+        <div class="home_list">English Movies</div>
+        <hr>
+        <div id="english_movies"></div>
+
+        <div class="home_list">TV Show</div>
+        <hr>
+        <div id="tv_show"></div>
+
+        <div class="home_list">Hindi Movies</div>
+        <hr>
+        <div id="hindi_movies"></div>
+
+        <div class="home_list">Telugu Movies</div>
+        <hr>
+        <div id="telugu_movies"></div>
+    </div>
+    <!---------------------------------end-home------------------------------->
+
+
+
+
+
+
+</div>
 
 <footer>
     <hr>
     <ul>
-        <li>Home</li>
-        <li>Contact Us</li>
+        <li></li>
+        <li></li>
+        <li class="footer_menu">Home</li>
+        <li></li>
+        <li class="footer_menu">Contact Us</li>
+        <li></li>
+        <li></li>
         <div style="clear: both;"></div>
     </ul>
     <hr>
 
     <div id="footer1">T&K Film Library</div>
     <div id="footer2">The easiest way to find films</div>
+    <div id="footer3">Developed by : T&K Software</div>
 </footer>
 
 </body>

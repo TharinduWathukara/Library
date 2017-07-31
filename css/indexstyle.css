@@ -16,6 +16,7 @@ header{
     color: silver;
     padding-left: 20px;
     border: 2px solid black;
+    cursor: default;
 }
 
 header #header_span1{
@@ -28,6 +29,9 @@ header #header_span2{
 header #header_span3{
     color: yellow;
     font-size: 50px;
+}
+header:hover{
+
 }
 
 
@@ -47,7 +51,13 @@ nav ul li{
     padding:0 49px;
     padding-top: 13px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
+nav ul li:hover{
+    background: blueviolet;
+    color: aqua;
+}
+
 nav #quick_search{
     border:1px solid black;
     border-radius: 20px;
@@ -55,6 +65,11 @@ nav #quick_search{
     padding: 5px 0 5px 5px;
     background: silver;
 }
+nav #qsearch:hover{
+    background: #231e44;
+    cursor: default;
+}
+
 nav #quick_search_submit{
     color: whitesmoke;
     background: sandybrown;
@@ -63,15 +78,56 @@ nav #quick_search_submit{
     border:1px solid black;
     border-radius: 5px;
 }
+nav #quick_search_submit:hover{
+    cursor: pointer;
+    background: saddlebrown;
+    color: yellow;
+}
+
+/**************************category******************************/
+
+.dropdown_category {
+    position: relative;
+}
+
+.film_content {
+    display: none;
+    position: absolute;
+    background-color: #19c7c4;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.film_content a {
+    font-size: 15px;
+    color: black;
+    padding: 5px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+.film_content a:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.dropdown_category:hover .film_content {
+    display: block;
+}
 
 /************************middle*************************/
 #middle{
-    background: silver;
-    height: 300px;
     margin:3px 0;
 }
 
+/************************home*************************/
 
+#middle .home_list{
+    padding: 10px;
+    font-size: 25px;
+    color: lightblue;
+    cursor: default;
+}
 
 
 
@@ -84,6 +140,7 @@ footer{
     background: linear-gradient(#211c3c, #000060,#211c3c);
     color: whitesmoke;
     text-align: center;
+    cursor: default;
 }
 footer ul{
     list-style: none;
@@ -91,10 +148,18 @@ footer ul{
 footer ul li{
     font-size: 16px;
     float: left;
-    padding:0 290px;
+    padding:0 82px;
     padding-top: 8px;
     padding-bottom: 8px;
 }
+footer ul .footer_menu{
+    cursor: pointer;
+}
+
+footer ul .footer_menu:hover{
+    color: aqua;
+}
+
 footer #footer1{
     padding:15px 0 5px 0;
     letter-spacing: 3px;
@@ -103,4 +168,7 @@ footer #footer2{
     padding-bottom: 5px;
     font-size: 12px;
     letter-spacing: 4px;
+}
+footer #footer3{
+    letter-spacing: normal;
 }
