@@ -80,7 +80,7 @@ nav #quick_search_submit{
 }
 nav #quick_search_submit:hover{
     cursor: pointer;
-    background: saddlebrown;
+    background: #e6711f;
     color: yellow;
 }
 
@@ -115,7 +115,9 @@ nav #quick_search_submit:hover{
     display: block;
 }
 
-/************************middle*************************/
+/****************************************************middle******************************************************
+****************************************************************************************************************/
+
 #middle{
     margin:3px 0;
 }
@@ -130,9 +132,78 @@ nav #quick_search_submit:hover{
 }
 
 
+/************************add-film********************/
 
+#add_film{
+    margin:0;
+}
 
+#add_film #add_film_hedder{
+    font-size: 50px;
+    color: #bd65bc;
+    text-align: center;
+}
 
+#add_film ul{
+    list-style: none;
+
+}
+#add_film ul li{
+    float: left;
+    width: 640px;
+    padding: 15px 0;
+}
+
+#form_r{
+    text-align: center;
+}
+
+#add_film_form label{
+    font-size: 18px;
+    color: silver;
+    padding: 10px;
+}
+
+#form_name{
+    width: 400px;
+    background: silver;
+}
+#form_type{
+    width:140px;
+    background: silver;
+}
+#form_description{
+    width: 450px;
+    background: silver;
+}
+#form_imdb{
+    width: 131px;
+    background: silver;
+}
+#form_releasedate{
+    width: 130px;
+    background: silver;
+}
+#form_url{
+    width: 400px;
+    background: silver;
+}
+#form_submit{
+    width:1000px;
+    text-align: center;
+    margin-left: 175px;
+    margin-bottom: 5px;
+    padding:10px 0;
+    background-color: #515151;
+    color: antiquewhite;
+    letter-spacing: 4px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+#form_submit:hover{
+    background-color: #223c51;
+    color: silver;
+}
 
 /***************************footer***********************/
 
