@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T&K Film Library</title>
+    <link rel="stylesheet" href="../css/indexstyle.css">
+    <link rel="stylesheet" href="../css/addfilmstyle.css">
+    <script src="../lib/jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header> <span id="header_span1">T<span id="header_span3">&</span>K</span> <span id="header_span2">Film</span> Library</header>
+
+<nav>
+    <hr>
+    <ul>
+        <li id="nav_home">Home</li>
+        <li class="dropdown_category">
+            <div class="category">Category</div>
+            <div class="film_content">
+                <a>Action</a>
+                <a>Adventure</a>
+                <a>Animation</a>
+                <a>Biography</a>
+                <a>Comedy</a>
+                <a>Crime</a>
+                <a>Documentary</a>
+                <a>Drama</a>
+                <a>Family</a>
+                <a>Fantasy</a>
+                <a>History</a>
+                <a>Horror</a>
+                <a>Music</a>
+                <a>Romance</a>
+                <a>Sport</a>
+                <a>War</a>
+            </div>
+        </li>
+        <li>Upcomming</li>
+        <li>Trailers</li>
+        <li>TV Shows</li>
+        <li id="qsearch">
+            <form>
+                <input type="search" placeholder="Quick Search..." id="quick_search">
+                <input type="submit" value="Search" id="quick_search_submit">
+            </form>
+        </li>
+        <div style="clear: both;"></div>
+    </ul>
+</nav>
+<hr>
+
+<div id="middle">
+
+    <!--------------------------------add-film----------------------------------->
+
+    <div id="add_film">
+
+        <div id="add_film_hedder">Add a new film</div>
+
+        <form id="add_film_form">
+
+            <ul>
+                <li id="form_l">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="form_name">Film Name</label>
+                            </td>
+                            <td>
+                                <input type="text" id="form_name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_type">Film Type</label>
+                            </td>
+                            <td>
+                                <select id="form_type">
+                                    <option value="">Select type of film...</option>
+                                    <option value="3D">3D</option>
+                                    <option value="english">English</option>
+                                    <option value="telugu">Telugu</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="tamil">Tamil</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_description">Description</label>
+                            </td>
+                            <td>
+                                <textarea rows="10" cols="50" id="form_description"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_imdb">IMDB</label>
+                            </td>
+                            <td>
+                                <input type="text" id="form_imdb">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_releasedate">Release Date</label>
+                            </td>
+                            <td>
+                                <input type="date" id="form_releasedate">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="form_url">Torrent URL</label>
+                            </td>
+                            <td>
+                                <input type="url" id="form_url">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Category</label>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>Action :</td>
+                                        <td><input type="checkbox" id="form_action" value="action"></td>
+                                        <td>Adventure :</td>
+                                        <td><input type="checkbox" id="form_adventure" value="adventure"></td>
+                                        <td>Animation :</td>
+                                        <td><input type="checkbox" id="form_animation" value="animation"></td>
+                                        <td>Biography :</td>
+                                        <td><input type="checkbox" id="form_biography" value="biography"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Comedy :</td>
+                                        <td><input type="checkbox" id="form_comedy" value="comedy"></td>
+                                        <td>Crime :</td>
+                                        <td><input type="checkbox" id="form_crime" value="crime"></td>
+                                        <td>Documentary :</td>
+                                        <td><input type="checkbox" id="form_documentary" value="documentary"></td>
+                                        <td>Drama :</td>
+                                        <td><input type="checkbox" id="form_drama" value="drama"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Family :</td>
+                                        <td><input type="checkbox" id="form_family" value="family"></td>
+                                        <td>Fantasy :</td>
+                                        <td><input type="checkbox" id="form_fantasy" value="fantasy"></td>
+                                        <td>History :</td>
+                                        <td><input type="checkbox" id="form_history" value="history"></td>
+                                        <td>Horror :</td>
+                                        <td><input type="checkbox" id="form_horror" value="horror"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Music :</td>
+                                        <td><input type="checkbox" id="form_music" value="music"></td>
+                                        <td>Romance :</td>
+                                        <td><input type="checkbox" id="form_romance" value="romance"></td>
+                                        <td>Sport :</td>
+                                        <td><input type="checkbox" id="form_sport" value="sport"></td>
+                                        <td>War :</td>
+                                        <td><input type="checkbox" id="form_war" value="war"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li id="form_r">
+                    <input type="image" id="form_photo">
+                </li>
+                <div style="clear: both;"></div>
+            </ul>
+
+            <input type="submit" value="Add Film" id="form_submit">
+
+        </form>
+
+    </div>
+
+    <!--------------------------------------------------------------------------->
+
+</div>
+
+
+<footer>
+    <ul>
+        <li></li>
+        <li></li>
+        <li class="footer_menu" id="footer_home">Home</li>
+        <li></li>
+        <li class="footer_menu">Contact Us</li>
+        <li></li>
+        <li></li>
+        <div style="clear: both;"></div>
+    </ul>
+    <hr>
+
+    <div id="footer1">T&K Film Library</div>
+    <div id="footer2">The easiest way to find films</div>
+    <div id="footer3">Developed by : T&K Software</div>
+</footer>
+
+
+</body>
+</html>
